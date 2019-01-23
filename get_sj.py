@@ -57,16 +57,6 @@ def get_info(info_url):#获取单个url的所有内容
     return info
 #初步数据清洗，删去标签链接
 
-def wash_info(one_info):
-    septone = str(one_info).replace(" ","").replace("   ","").replace("\n","")
-    restr = r'<[^\s]*?>'
-    recom = re.compile(restr)
-    stop_list = re.findall(recom,septone)
-    stop_list = list(set(stop_list))
-    for stop_word in stop_list:
-        septone = septone.replace(stop_word,"")
-    return septone
-
 #根据url插入数据库
 def threadone(threadurl):
     db = pymysql.connect(mysql_ip,mysql_uname,mysql_pwd,mysql_database )#链接数据库
