@@ -13,4 +13,4 @@ session.headers = header #添加请求头
 repl = session.get(url)
 content = json.loads(repl.content) #以json格式接收传回文件
 print(content['paging']['next'])
-
+session.close
