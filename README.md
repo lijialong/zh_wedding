@@ -5,6 +5,7 @@
 1.get_zhsj.py 测试教学文件（项目爬取核心思想）
 2.get_sj.py 爬取数据（采用多线程爬取存入数据库）
 3.global_var.py 全局参数
+4.zhzh.sql 数据库表文件
 
 # 数据分析
 
