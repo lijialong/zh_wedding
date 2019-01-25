@@ -55,7 +55,6 @@ def get_info(info_url):#获取单个url的所有内容
         info.append(oneinfo)
     session.close
     return info
-#初步数据清洗，删去标签链接
 
 #根据url插入数据库
 def threadone(threadurl):
